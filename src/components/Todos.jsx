@@ -10,17 +10,18 @@ class Todos extends Component {
       todos: [
         {
           id: 1,
-          status: false,      
-          work                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ; 
+          status: false,
+          work: "First thing to do ",
         },
       ],
     };
   }
   render() {
+    const { todos } = this.state;
     return (
       <div className="w-50 mx-auto my-3">
         <AddTodo />
-        <TodoList />
+        <TodoList todos={todos} />
       </div>
     );
   }

@@ -2,9 +2,9 @@ import React, { Component } from "react";
 
 class TodoList extends Component {
   render() {
+    const { todos } = this.props;
     return (
       <div>
-        <h1>Todos</h1>
         <table className="table striped hover">
           <thead>
             <tr>
@@ -13,7 +13,7 @@ class TodoList extends Component {
               <th>Last Name</th>
               <th>Group</th>
               <th>Does Work</th>
-              <th className="text-end pe-5">Action</th>
+              <th className="text-end pe-5 ">Action</th>
             </tr>
           </thead>
           <tbody>
